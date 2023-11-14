@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Music Player</title>
+</head>
+
+<body>
+
+    <main>
+        <!-- <nav>
+            <div class="circle">
+                <i class="ri-arrow-left-s-line"></i>
+            </div>
+            <div class="circle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav> -->
+        <img src="https://w0.peakpx.com/wallpaper/478/486/HD-wallpaper-marshmello-neon-marshmello-music.jpg" class="song-img" alt="">
+        <h1>Alone</h1>
+        <p>Marshmello</p>
+
+        <audio controls>
+            <source src="./Img&Song/Marshmello - Alone (Official Music Video).mp3" type="audio/mpeg">
+        </audio>
+
+        <input class="progress" type="range" value="0">
+
+        <div class="controls">
+            <div class="backward"><i class="fa-solid fa-backward"></i></div>
+            <div class="play-pause"><i class="fa-solid fa-play con-icon" ></i></div>
+            <div class="forward"><i class="fa-solid fa-forward"></i></div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
