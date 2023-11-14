@@ -38,7 +38,7 @@ if (song.play()) {
     setInterval(
         () => {
             progress.value = song.currentTime
-        }, 500)
+        }, 1000)
 }
 
 progress.onchange = () => {
