@@ -15,29 +15,62 @@
 <body>
 
     <main>
+        <div class="menu-select">
+            <h1 onclick="changeSong()" class="song-title"
+                data-song-src="./Img&Song/Marshmello - Alone (Official Music Video).mp3" data-song-name="Alone"
+                data-artist-name="Marshmello"
+                data-song-pic="https://w0.peakpx.com/wallpaper/478/486/HD-wallpaper-marshmello-neon-marshmello-music.jpg">
+                ALONE</h1>
+            <hr>
+            <h1 class="song-title" data-song-name="SUICIDAL-IDOL" data-artist-name="Ecstacy"
+                data-song-pic="https://img.youtube.com/vi/BxYX7JKGFcM/0.jpg" onclick="changeSong()"
+                data-song-src='./Img&Song/ecstacy-slowed-ecstacy-slowed.mp3'>
+                SUICIDAL-IDOL - ecstacy</h1>
+            <hr>
+            <h1 class="song-title" data-song-name="BABYDOLL SPEED" data-artist-name="Ari Abdul"
+                data-song-pic="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYUEhgVEhIZGBgaGhgYGBUaFRoYGB0aGBgaGRgYGBgcIy4lHB4rHxocJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHxISHzErJCw6NDc2NDQ2NDY0MTQ0NDQ0NDU0NDQxNDQ0ND00NDQ0NDQ0NDQ0NDE0NDQ0NDQ0NDQ0NP/AABEIAKMBNgMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYBAgQDBwj/xABBEAACAQMCAgUHCwMEAQUAAAABAgADBBESIQUxBhMVQVEiMlJTYXGRBxQjM0JygZKhstIXk8FUYtHTsSRDc+Hx/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAEDBAUCBv/EACsRAAICAQQCAQIFBQAAAAAAAAABAhEDBBIhMUFRcSJhBRRCgaETMlKx8P/aAAwDAQACEQMRAD8A+VRET0XiJ1WHDa1wxWhSdyu7aVJVQeRdvNQbcyRN+IcKr2+OvougbzWK+Q2OYVhlWPsBkCziiIkgREQBERAEREAREQBERAEREAREQBEkaHB3dA4ZMMMjJOf/ABPTsKp6SfFv4wLIqJK9hVPST4t/GOwqnpJ8W/jAsiokr2FU9JPi38Y7Cqeknxb+MCyKiSvYVT0k+LfxjsKp6SfFv4wLIqJK9hVPST4t/GOwqnpJ8W/jAsiokr2FU9JPi38Y7Cqeknxb+MCyKiSvYVT0k+LfxjsKp6SfFv4wLIqJK9hVPST4t/GOwqnpJ8W/jAsionfdcKemhdmUgY5E53OO8TggCIiAJhjgE+yZmCM7QD7VcdXw20OEYrRyuEOlmqK6U2bWMaWYura/AspDBUWZ4VfUuJWrM9NtDl0qo7a3BpoHc6z5xVWUo22GYYC6W1xnAulVtdUBTuWRH06aiVGpqj75Lq1TyMM3lENkhjsraUZOodIrG1+iWrTVCKxUUjTqKuuilMAm3BAJcHcgHfJ75BWUjg/Rik1OvWvbk0qVGsLXVTp62apnGoj7KDY+3ONsbzdv8mgDmlXu9NV6r0bfRT1KxSl1uqpk5UFfsjl4mVc9Iq9CvdG0rlKdZ6uoAKyurM2DpYEA6W57HebVOmV81RajXRLo7VFbq6WzMnVs2NGDlNsEY/GCakTlPoPT6sKbljdC2W9ah1f0XVZBKCp6WNs8s/GS/HPk9o1rsrY1erArrRq02Q6aeaHXaqZzlvJXzTzLcxiV/gfTqtQsq1vUepU1Uupt0Ip9XTVgVZ3YjWSoxpXJXmNtsRFTpXeMzsblgz1ErMyqik1EUIrZVRjCgDAwD3gwKkWKl0Ht6oSvb3jta6K71XajisnUAFgq7atWdttsd/Kd1LoHbipTahdNVYfNbg06tAdW1vXrBFDAEZbAOR3jbbORVbjprf1A4e6JDq6v9FSGQ6KjjZNsqqjbw23nhR6VXiEMlwQRTpUQdFM/R0W1Ul3X7Lb55nvJgVI8OklEJe3KKqqEr1VCoulAFdgAi5Okbcs7SMntd3L1aj1KjanqMzu2AMsxyxwAAMk9wnjJPYiIgCIiAIiIAiIgFt4Z9TT+6JuK58BNOGfU0/uiarNuixRyN7lfRztdlljra67Pdah8BNwxnmsxVqhRkzoPS4V4Ob+bzt0me4E1q1VUZZsSBueMPnC7Tgq3TOfLOZiyT00eErZvxYdVLmUqX8lvoMGGQT8J1paZ7/0lT4RxLQ4DHyTtLvbOHAIluPHgyRuKM2fJqMM6bdeDyThwP2j8JseFj0j8JI0k2nqV2h4cV9HlanNXZCvYY+1OV6WO+TtRZG3QlsdPhfaK56vPHyRjuROWtesv2R+s67gSIvWwIyaXDGN0WYNVmnJJsx2y3oL8TM0uMMzquhfKZVzk95AkPUabWQ+kT76fuE5EtvSR3En5LBxz6hvev7hKvLRxz6hvev7hKvKz0hERJJEREAREQBERAEREAREQBERAEREAREQBERAEREAmbbjaJTVChJUAcx3SSTum3DB9Cn3RNQ2BvOj+H9y/Y5X4l1H9zepVCLk90r15fs58B4Tq4lc6vJB2kSU3jWZ5N7Yvg9aLTRit8lz/AKMNASSCWgClmOMDOPGe600xkEcpRHSyf9zSNMtTFdJsiShEsPRviultDnY8j/iRtUDE4QcNtCbwTVPjyROMdRBpqvR9dojInpiRPRi96yiMncbH3yZM3t+Ucja1w+0c9VJwXaSUecFyJ7hLkpyR4IK4EirtAdpM3KyHuh4S+auJGB1LgizbDMzSQKQ+M6SG/Kc/4nuqkmdltSGoe8H9ZheCLTdezq/mJJpN+jhv+LrUplApBJG+QeRB/wASKln42PoG96/uErE5J00IiJJIiIgCJfbvoLSWxFwlasKgtEvGD0voCGUFqa1QAA/gpJPLbvEbZdEC/C3vesxUAqVKdDbyqFFkWtU8fJLHltsPGQRuRVIl+4B0DpXNlQq9dWSrXW4KkUtduhoOy/SuB5AYKMEnc5x4Tl4H0MS7oULincFaPl/PmbSDQNNNZK+KsvInlkZzvBG5FLiXez6MWD21GtUvK1L5zVq06JakrKNFQqhqgYIyNJO+ASdwJ5J0NS3WrU4pcNRppVNBRSTW9VwuvUmRhU04OSPEbY3DcimxLo/QlA7lbgvbmyrXtvWVQpfq9P0bq3mkat/w5bgQXDOELVs7y5LsGthblVGNLdfVKNqzvsBkYgm0RESY6LcOS4ugtbPVIlStWwcHq6SF2APdkgLn2ydodDqJsEuqlxURqtN6iMlB6lsmk4FOtUUFlY8tRxjfnjcG0ilRJpuit6Lf5ybV+p0LV6wFCNDDUHwGzjG522HPE8q/Ry7S3Fy9s60SFbrCBjS3msy51Kp7mIAgWiKiS190bu6NJa1W1dKbacMQPteaGUHUue7UBuQJPW/Q029q9zxKjVQJUtgE1KFalUcLV1acsGC8twQcZEByRS4kj0g4b82u69DORTdlU95TOUJ9pUqTI6SSIiIBbeGfU0/uicN+CU8n8Z28NcdSm480d4nLcnyZu0SuMkc7WOpQf3INzib21JnqKiDLMwAHiSdppWG5lv8Ak9urWmXNyyq4KGkWz474PLOcTP8ArpmubahaHEuiV8qZ6k6ANzkAnHszkzt6DdC3uGc3KMlMLhTyYt3YyOU+zMAyY9kg61wbdXZmQJz8ruA5gDvOO6elmc267MdbY14/k+DcVtGpVnTHmMy59xxI6oDneWfiNyK1zUfIIZi23t7pX745qNjxxLNRiSjuvt9FumzOUtrXS7JfoleFK4GfJbYju9k+iz550ZswagYnkfNn0BW2mnFGSxqzBqZReZ7f+YYziuTOp2nDdnaXwXJkyPgirmRNwJKVzIy4M0S6K8XZx0xuZKcMpaifYrH4KTIpDuZYOAqNLk91Op+wyiTqD+Ga/wBS+URvHPqG96/uEq8s3GnBoNgjmvf/ALhKzOCd9CIiSSIiIB9EX5QKK2qIKVw1RbRbTQ1UfNSQmlqjUgfKPPuBIAGRzmtL5Rlp1qQpWdP5rTRaAV0U3PVaVDr1mrAyRnHI4GfZ89iRR52o+i8E6eW1tb0KaUrrNu1waaLWVKbrVqO6LXAJ16VKjkcHVjMq/D+Oqlrf0TTIa66orowEXRVZ3BGc6SG0gDPKQUQNqLnwvpNZrZW1G5tatZ7Z6lRAHVKTNUcuoY7tjl3dx5wOmVO4WrT4pbvVp1KxuEai+h6TldGlcnDJpwNz4nfIxTIihtRe7fptR+cEPbOtotpUs6dBGBcJUZCzs7EeUQu++23PcnwsePcOpLc0Ra3Pze4W3BXrF6wPReo5OrOwOUx7jKXEUNqLPwC+tl4g4TVSta9Orb5qMCyLWpaNTMNsawN+4H2ST6O9NKNnbhfm1TrkR6ZVK3/paxOwqVqZJGv2qDnxwcCixBO0+lX/AEmt7anaugepcjhlKgpWqpt16xSrLVQeVrUrnT35GcYBHLxP5Q1q2zqtJ1rVKS0XGKHUAAaS4OjrWyPss2Bn2b/PpmKI2o+h8X+UcVEZqVJ1qu9B3VxQNFTRdXwrKgqOCV+022dscp43/SS0ulr0Ep1qTXteg9apVrI1KnpqDWV3GFC535nYbAKJQogbUS3SviK3N9cV1816jaD4ouFU/iqg/jImIknoREQCZteCq9NXLkagDjA757Pyndwz6mn90SNuHGJu0Lrc/g5+tVuKI25O88CZvXO88pkySubZtgqikffug3HzcWSPU85fIZueSm2T4ZGDPHpjwmnVt3caNWC2s74xKv8AJDfAJVpMe8OB7xg/+BM/KfU0sgQ6QQdQBwD7wOctwx+vcuPJgzf4/evgoNQhATnfukegLN7ZmscmKRwQYyZN80ukjXjxuEW7tstXRyooOGXDdx8ZcEBlN4cQQrDbHOW61q6l/CdRqoI4MneR+DZlM47ncTuc/jPGsmYi6PE1aIG4kXcmTt3RkRc0Je3aK8TSdMjUO8nOGrlKinYNSqqT4akYZ/WRNKhvJ7haYD59W/7DKZr6JX6Zqck5xr2ir3/CFp0y4ckgjYgd5AkTLRxz6hvev7hKvOCfQIREST0IiYJgEhS4RVe1e6VR1SOtN2zvqbG4HeAWQE9xdfHbls6S1KgRqiIDnLuSEXAJ8rSCd8Y5cyJc7fjdpSNOzZGekKTW9S4SuOrPznS9xVFM0yW0PpIOobUVmLHjS06/D6TXK9TRo1BU0v8ARirqul1H0jpZdJPINtjUZB5tlPsLVq1RKVNcvUZUUf7mIAye4b7nuAM7exKgq3FJtKvbpUdwScEUioOggb51Ag7Ag5nv0Wu6VuKterlmVOqpUlfQ5asGV6ivpbTpQMM4O7rjeWSy4xbs/wA5p1ltqhtKtsesfrGV6QprQql1QFtSYXUFyDS7yNwbZ8/1jGcidV3ZmmtJmYEVafWrjuXrKlPB9uabHbuIly7XTyUa8Q3gt6lMcQ1OVVmrqyJ1xXUW6oOvW48nXjPMjzvr5Kw6l72k7vYpRa5YuKfW0781yrvo1ZKL5xHlEgnzswLZU6Fkz0KtYMNNJqSMN9RNXXp0922g594nJLdxq9o9RXp066v5HC1Rhka/m9u6VCqkAjBIyDuMyowSnYiIkkiIiAIiIAiIgCIiAW3hn1NP7okNcVfZietrd11pqEpAqAMHSxyPwMi6lQnnLcWXYmvZTkxb5JvwYrc9oQ7GaTXMrcubLa4omejfFTbVg4zjBBx4H2d8kuP8cS4ZWfUdtxsuPEA79/f7ZVRBlkMzjGkUT08ZS3Ps3qEE5A2moMY8ZiVt8l6Om3unQ+Sfwlr4Tx1DgEkMdiP+JS8zKmX4tTKHHa9GXPpIZeen7R9TpV87/wD7Ny/fKr0c4gzgq5yV5HvxLA9cTqQalFSXTOFki8cnGXaMXDZkXcJOqpUnLVeWxVFF2znorvJOmMU29xH6TktqeQWyOeMZA7s986OJIUpakIYlTgc/LAzp2PunjI1ta+S2F/1E/uiH459Q3vX9wlXkrf3VZqZFSmFXIydLDvGNyfGRU4B9QhERJPQiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgFu4X9Sn3RKo53MtfC/qU+6JU25n3mCEazBiZAkEjE9UQnliebTElcPkh8mz5zvNYmY7JMTMziMSaBJdHnxXUZwDkH4S7PR286fPbSpoqK3gRL1ROseScnGcTp6OX0NemcL8ThWRSrtGlWngc5yViJtcXIHMyOq3Y7jNrkl2YIY5S6R3WVVclW27+70SMb9+4+E9rmuhwiNnBBY7c/DbwH+ZBdaDnyQdx34P4eydFJt00gDffHPmuxPf8A/cyzyJ2jbHT01Jnpxz6hvev7hKvLRxz6hvev7hKvOOd1CIiSehETDHAJgE30c6MXN85W2p5C+fUY6aaZ3AZsEk+xQT7MS7J8jdbHlXtMHvApOR+B1DPwn1Do1whLO0p0KY81RqPezkZdj7S2f0HdIzpJ0rNnVKfNw6JRFxUfr1RwhdkIRCuHbyc41DOcSCpyZRP6NVf9cn9hv5x/Rqr/AK5P7Dfzn0Ch0toBXa4ZaWK9xSUeU5K21Qo1QhVyq4AJJ2XI3nenH7dhqFdSNdJOTZ1V1VqKgYydQdSPf7DIFs+Yf0aq/wCuT+w384/o1V/1yf2G/nPp9fj9slcW71lFUsiaCG85xlFLY0gt3ZO52G88l6T2hLgXK5Tztmx9YKZKnGHUOwUsuQCdyIG5nzQ/I3VxtfU8/wDwsP11Sm9J+iNzYEfOEBRjha1MlkJ9EkgFW9hAzvjODP0NR4zQdxTWsrOXqU9IyTrogGqp2205Gc+kPGenFeHU7mi9CquUqKVYe/kR4MDgg9xAk2FJn5WietzQNOo6N5yOyMfajFT+onlJLRERAEREAREQBERALHYcRprTRWqAEKARg/8AErrHc++WKx4dSamjMmSVBJ1N/wAyuHmffIIRnEATYQcSaFmDNYJmcQSYE9AJoBN1MmJDM4mJmJ6IMCWzo5cg7+AIIzjYjEquJIcFuNFUE8jsfxmjTT2yrwzHrcW/G2u1yTXFaIJyMKPDOZFMg8ZKXzKfdIusi52JnQyHL07dU2Yt6BYnGPx/8TdwUqKWIAB3IbUAAVJ5E90zQQEMNRH4Z5d2O+dBopkK+DnK7PqG5G22w2Pd4+yZZKzapU+eTw4tfU3pMqOCSV2we5gT3SAk9xWwppSZkTBBXfJPNgDzMgZzTpoREST0IYZBERAP030S46l7aU66EatIWoud1qKBrU/juPEEHvnpc8Ao1Ltbqqiuy01porojhCrs4dCwyr5bGR4CfnLgnHLizqdZa1SjHAYbFHA5B1OzDn7Rk4xLcvyu34G9O1PtNKpn9KmJFFTi/B9NrdEF1F6V1UpMzXOplWm2UuqgqVEw6kDDKCGG+3fNLbosEvaFXH0dvbJTVi+9SqgdKbMg2yiO+/ean+2fN/6u3/qrX+3V/wC2P6u3/qrX+3V/7ZA2s+s3XR5HqVHNRgalW2rEADZrYoyqPYdAz7zI+l0KpBSjVqj0hRrW9GkwQLSSvjrNLKoZiNKgFicAd53nzb+rt/6q1/t1f+2P6u3/AKq1/t1f+2BtZ9R4F0Ro2lbrqbuz9XoOo5Bdipq1iB/7jlE1H/bJLjvFqdpbvXqnCqpIHezfZRfFmOAJ8cPyvX3qrYe3qqn+asqfH+kdzeuGuqpbT5qABUXPoqNs+05Ptk0FFkZXqs7s7+c7MzfeYlm/UzSIkloiIgCIiAIiIAiIgFu4X9Sn3RKi3M+8y28M+pp/dE8Twel6J/OZBBWsRiWbsil6J/MY7HpeifzGerQsrONpgSzng9L0T+YzA4PS9E/mMixZWw3hAlk7HpeifzGZHB6Xon8xiwVwCbASxdk0vRP5jM9lU/A/mM9WjyyvBZuoxJ/sun4H8xjsyn4H8xnpTR5cWze0dXQbb8jMVaSielC1VfNyPxmXt1bnn4zctZDbynZypaDJvbi1RwowBOAD34xk8jyE0KHrEz6XLOceUpxzM7hZIO4/Gb/N1yDvty3PvlE88ZezTDTzi1VHLxz6hvev7hKvLRxz6hvev7hKvMZ0EIiJJIiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgHQl9UUBVqMANgJt2jV9Y05YgHV2jV9Y0do1fWNOWIB1do1fWNHaNX1jTliAdXaNX1jR2jV9Y05YgHV2jV9Y0do1fWNOWIB1do1fWNHaNX1jTliAdXaNX1jR2jV9Y05YgHV2jV9Y0do1fWNOWIB0Vbx3GlqhI8D7JzxEAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREA//9k="
+                onclick="changeSong()" data-song-src='./Img&Song/Baby-Doll(PaglaSongs).mp3'>BABYDOLL SPEED</h1>
+           
+            <hr>
+            <h1 class="song-title" data-song-name="TU HAI KAHAN" data-artist-name="Uraan"
+                data-song-pic="https://i.ytimg.com/vi/AX6OrbgS8lI/hqdefault.jpg" onclick="changeSong()"
+                data-song-src='./Img&Song/Tu-Hai-Kahan(PaglaSongs).mp3'>TU HAI KAHAN</h1>
+            <hr>
+            <h1 class="song-title" data-song-name="REI DO BRASIL" data-artist-name="Seek"
+            data-song-pic="https://i1.sndcdn.com/artworks-irznl3EWzy0WvDdX-1sf2DA-t500x500.jpg" onclick="changeSong()"
+            data-song-src='./Img&Song/Seek .mp3'
+            >REI DO BRASIL</h1>
+           
+        </div>
+
+
         <nav>
-            <div class="circle">
-                <i class="ri-arrow-left-s-line"></i>
-            </div>
-            <div class="circle">
+
+            <div onclick="menuToggle()" class="circle menu-circle">
                 <i class="ri-menu-line"></i>
             </div>
         </nav>
-        <img src="https://w0.peakpx.com/wallpaper/478/486/HD-wallpaper-marshmello-neon-marshmello-music.jpg" class="song-img" alt="">
-        <h1>Alone</h1>
-        <p>Marshmello</p>
 
-        <audio controls>
-            <source src="./Img&Song/Marshmello - Alone (Official Music Video).mp3" type="audio/mpeg">
-        </audio>
+        <section>
+            <div class="song-div">
+                <img src="https://w0.peakpx.com/wallpaper/478/486/HD-wallpaper-marshmello-neon-marshmello-music.jpg"
+                    class="song-img" alt="">
+            </div>
+            <h1 class="name">Alone</h1>
+            <p class="artist">Marshmello</p>
 
-        <input class="progress" type="range" value="0">
+            <audio controls>
+                <source src="./Img&Song/Marshmello - Alone (Official Music Video).mp3" type="audio/mpeg">
+            </audio>
 
-        <div class="controls">
-            <div class="backward"><i class="fa-solid fa-backward"></i></div>
-            <div class="play-pause"><i class="fa-solid fa-play con-icon" ></i></div>
-            <div class="forward"><i class="fa-solid fa-forward"></i></div>
-        </div>
+            <input class="progress" type="range" value="0">
+
+            <div class="controls">
+                <div class="backward"><i class="fa-solid fa-backward"></i></div>
+                <div class="play-pause"><i class="fa-solid fa-play con-icon"></i></div>
+                <div class="forward"><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </section>
     </main>
 
     <script src="app.js"></script>
